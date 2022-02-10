@@ -1,3 +1,29 @@
+/*variables
+colors, fonts, font sizes and spaces
+*/
+:root {
+  /* Colors setting */
+  --bg-default-color : rgb(250, 250, 250);
+  --main-header-color : #2c2d2d;
+  --secondary-header-color : #2e31a6;
+  --terciary-header-color: #f26c6c;
+  --test-default-color: #333;
+
+  /* Font sizes */
+  --main-header-size: 48px;
+  --secondary-header-size: 40px;
+  --terciary-header-size: 40px;
+  --text-size: 16px;
+
+  /* Fonts */
+  --default-font : Montserrat;
+  
+  /* Spaces */
+  --default-margin: 0;
+  --default-padding: 0;
+  --default-border: 0;
+}
+
 body,
 h1,
 h2,
@@ -23,4 +49,27 @@ caption,
 hr {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: var(--bg-default-color);
+  font-family: var(--default-font);
+  margin: var(--default-margin);
+  padding: var(--default-padding);
+  border: var(--default-border);
+}
+
+h1 {
+  color: var(--main-header-color);
+  font-size: var(--main-header-size);
+}
+
+h2 {
+  color: var(--secondary-header-color);
+  font-size: var(--secondary-header-size);
+}
+
+h3 {
+  color: var(--terciary-header-color);
+  font-size: var(--terciary-header-size);
 }
