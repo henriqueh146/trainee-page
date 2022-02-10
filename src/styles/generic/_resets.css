@@ -47,16 +47,14 @@ th,
 td,
 caption,
 hr {
-  margin: 0;
-  padding: 0;
+  margin: var(--default-margin);
+  padding: var(--default-padding);
+  border: var(--default-border);
 }
 
 body {
   background-color: var(--bg-default-color);
   font-family: var(--default-font);
-  margin: var(--default-margin);
-  padding: var(--default-padding);
-  border: var(--default-border);
 }
 
 h1 {
