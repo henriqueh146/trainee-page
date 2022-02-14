@@ -1,3 +1,39 @@
+/*variables
+colors, fonts, font sizes and spaces
+*/
+:root {
+  /* Colors setting */
+  --bg-default-color : rgb(250, 250, 250);
+  --light-grey: rgb(220, 220, 220);
+  --grey: rgb(160, 160, 160);
+  --dark-grey : #2c2d2d;
+  --blue : #2e31a6;
+  --light-salmon: #eecaca; 
+  --salmon: #f26c6c;
+  --dark-salmon: #924242;
+  --light-yellow: #ffffb7;
+  --yellow: rgb(255, 255, 109);
+  --dark-yellow: rgb(134, 134, 0);
+  --light-green: rgb(199, 252, 199);
+  --green: rgb(52, 158, 52);
+  --dark-green: rgb(71, 99, 71);
+  --test-default-color: #333;
+  
+  /* Font sizes */
+  --main-header-size: 48px;
+  --secondary-header-size: 40px;
+  --terciary-header-size: 40px;
+  --text-size: 16px;
+
+  /* Fonts */
+  --default-font : Montserrat;
+  
+  /* Spaces */
+  --default-margin: 0;
+  --default-padding: 0;
+  --default-border: 0;
+}
+
 body,
 h1,
 h2,
@@ -21,6 +57,27 @@ th,
 td,
 caption,
 hr {
-  margin: 0;
-  padding: 0;
+  margin: var(--default-margin);
+  padding: var(--default-padding);
+  border: var(--default-border);
+}
+
+body {
+  background-color: var(--bg-default-color);
+  font-family: var(--default-font);
+}
+
+h1 {
+  color: var(--dark-grey);
+  font-size: var(--main-header-size);
+}
+
+h2 {
+  color: var(--blue);
+  font-size: var(--secondary-header-size);
+}
+
+h3 {
+  color: var(--salmon);
+  font-size: var(--terciary-header-size);
 }
