@@ -27,6 +27,12 @@
   color: var(--bg-default-color)
 }
 
+.button--primary:disabled {
+  background-color: var(--salmon);
+  border-color: var(--dark-salmon);
+  color: grey;
+}
+
 .button--secondary {
   color: var(--dark-grey);
   border-color: var(--dark-grey);
@@ -40,7 +46,111 @@
 }
 
 .button--secondary:focus {
-  border-color: var(--dark-grey);
   background-color: var(--dark-grey);
   color: var(--bg-default-color)
+}
+
+.button--secondary:disabled {
+  background-color: var(--grey);
+  border-color: grey;
+  color: grey;
+}
+
+.base-input {
+  margin: 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: var(--bg-default-color);
+}
+
+.t-input--var1 {
+  background-color: var(--light-grey);
+  border-color: var(--bg-default-color);
+  transition: background-color 0.5s, border 0.5s;
+}
+
+.t-input--var1:hover {
+  background-color: var(--bg-default-color);
+  border-color: var(--dark-grey);
+}
+
+.t-input--var1:focus {
+  background-color: white;
+  border-color: var(--blue);
+}
+
+.t-input--var1:disabled {
+  background-color: var(--grey);
+  border-color: var(--grey);
+  color: var(--light-grey);
+}
+
+.t-input--var2 {
+  background-color: var(--light-salmon);
+  border-color: var(--bg-default-color);
+  color: var(--salmon);
+  transition: background-color 0.5s, border 0.5s;
+}
+
+.t-input--var2:hover {
+  background-color: var(--bg-default-color);
+  border-color: var(--dark-salmon);
+}
+
+.t-input--var2:focus {
+  background-color: white;
+  border-color: var(--dark-salmon);
+}
+
+.t-input--var2:disabled {
+  background-color: var(--light-salmon);
+  border-color: var(--light-salmon);
+  color: var(--dark-salmon);
+}
+
+.t-input--var3 {
+  background-color: var(--light-yellow);
+  border-color: var(--bg-default-color);
+  color: orange;
+  transition: background-color 0.5s, border 0.5s;
+}
+
+.t-input--var3:hover {
+  background-color: var(--bg-default-color);
+  border-color: var(--dark-yellow);
+}
+
+.t-input--var3:focus {
+  background-color: white;
+  border-color: orange;
+}
+
+.t-input--var3:disabled {
+  background-color: var(--light-yellow);
+  border-color: var(--light-yellow);
+  color: var(--dark-yellow);
+}
+
+.t-input--var4 {
+  background-color: var(--light-green);
+  border-color: var(--bg-default-color);
+  color: var(--green);
+  transition: background-color 0.5s, border 0.5s;
+}
+
+.t-input--var4:hover {
+  background-color: var(--bg-default-color);
+  border-color: var(--dark-green);
+}
+
+.t-input--var4:focus {
+  background-color: white;
+  border-color: var(--dark-green);
+}
+
+.t-input--var4:disabled {
+  background-color: var(--light-green);
+  border-color: var(--light-green);
+  color: var(--dark-green);
 }
