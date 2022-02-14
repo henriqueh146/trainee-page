@@ -1,6 +1,33 @@
 @import 'generic/_box-sizing.css';
 @import 'generic/_resets.css';
 
+body {
+  background-image: url(../images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  margin: 20px 20px;
+  padding: 20px 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  display: inline-block;
+}
+
+.nav-menu {
+  list-style: none;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin: 0px 40px;
+}
+
 .base-button {
   border: 2px solid;
   border-radius: 3px;
@@ -153,4 +180,19 @@
   background-color: var(--light-green);
   border-color: var(--light-green);
   color: var(--dark-green);
+}
+
+.title {
+  margin: 100px;
+  margin-top: 200px;
+  width: 500px;
+}
+
+.title p{
+  font-size: 30px;
+}
+
+.title ul{
+  margin: 30px;
+  font-size: 26px;
 }
